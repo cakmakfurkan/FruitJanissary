@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="GameScreen" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FruitJanissary.GameController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/GameScreen.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="time" layoutX="362.0" layoutY="21.0" text="0 Seconds" textFill="#e5ff00">
+         <font>
+            <Font name="Comic Sans MS Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="24.0" text="Score:" textFill="YELLOW">
+         <font>
+            <Font name="Comic Sans MS Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="Score" layoutX="163.0" layoutY="24.0" text="0" textFill="#ffdd00">
+         <font>
+            <Font name="Comic Sans MS Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label fx:id="cann" layoutX="837.0" layoutY="24.0" prefHeight="38.0" prefWidth="24.0" text="3" textFill="#fff200">
+         <font>
+            <Font name="Comic Sans MS Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="751.0" layoutY="25.0" prefHeight="49.0" prefWidth="83.0" text="Life:" textFill="YELLOW">
+         <font>
+            <Font name="Comic Sans MS Bold" size="34.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="GameScreen2" prefHeight="600.0" prefWidth="898.0">
+         <children>
+            <ImageView fx:id="stop" fitHeight="38.0" fitWidth="45.0" layoutX="8.0" layoutY="552.0" onMouseClicked="#pause" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/pause.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="PauseScreen" focusTraversable="true" layoutY="1.0" prefHeight="600.0" prefWidth="898.0" visible="false">
+         <children>
+            <Label layoutX="290.0" layoutY="164.0" opacity="0.42" prefHeight="219.0" prefWidth="323.0" style="-fx-background-color: black;" />
+            <Label fx:id="statusLabel" layoutX="373.0" layoutY="212.0" prefHeight="36.0" prefWidth="194.0" text="Game Paused" textAlignment="RIGHT" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="25.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#5cfff1" />
+                        <Stop color="#3188d6" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fx:id="play" fitHeight="55.0" fitWidth="55.0" layoutX="515.0" layoutY="273.0" onMouseClicked="#play" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/play.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="55.0" fitWidth="78.0" layoutX="328.0" layoutY="273.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/back.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="retry" fitHeight="55.0" fitWidth="55.0" layoutX="424.0" layoutY="273.0" onMouseClicked="#retry" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/retry.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      </children>
+</AnchorPane>

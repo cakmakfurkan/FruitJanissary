@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FruitJanissary.InGameStartSceneController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/InGameStartScene.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="LogOutButton" fitHeight="130.0" fitWidth="128.0" layoutX="602.0" layoutY="301.0" onMouseClicked="#onLogOutButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/orange.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="HighScoresButton" fitHeight="130.0" fitWidth="130.0" layoutX="280.0" layoutY="300.0" onMouseClicked="#onHighScoresButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/watermelon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="StartButton" fitHeight="130.0" fitWidth="128.0" layoutX="436.0" layoutY="116.0" onMouseClicked="#onStartButtonClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/apple.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="435.0" layoutY="251.0" text="Start Game" underline="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff2f2f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="278.0" layoutY="431.0" text="High Scores" underline="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#aeff77" />
+                  <Stop color="#00800d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="620.0" layoutY="431.0" text="Log Out" underline="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="23.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff9009" />
+                  <Stop color="#faff78" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>
